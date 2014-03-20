@@ -11,5 +11,8 @@ module ApplicationHelper
     HTML
     html.html_safe
   end
+  def synopis(string, numchar = 30)
+    string.split(//).last(numchar).join
+  end
 
 end
